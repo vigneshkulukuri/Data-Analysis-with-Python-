@@ -1,7 +1,6 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
-import os
 
 df = pd.read_csv(r"V:\ecommerce_customer_data_custom_ratios.csv")
 category_gender_counts = df.groupby(["Product Category", "Gender"]).size().reset_index(name="Count")
